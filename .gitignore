@@ -1,5 +1,8 @@
 .gradle
 build/
+bin/
+bin-debug/
+html-template/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -8,5 +11,8 @@ gradle-app.setting
 !gradle-wrapper.jar
 
 # IDE
+.actionScriptProperties
+.flexProperties
+.project
 .idea/
 *.iml

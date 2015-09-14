@@ -1,7 +1,14 @@
 <?xml version="1.0"?>
-<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
-    <fx:Script><![CDATA[
-        import mx.controls.Alert;
-        ]]></fx:Script>
-    <s:Button click="Alert.show('Hello, world')" label="Say Hello"/>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:ext="http://ns.levelsbeyond.com/plex_extensions">
+	<fx:Script>
+		<![CDATA[
+		import com.levelsbeyond.plex.core.utils.StringUtil;
+		
+		import mx.controls.Alert;
+		]]>
+	</fx:Script>
+	<s:Button click="Alert.show(StringUtil.stringifyObject(['Hello','world']))" label="Say Hello"/>
+	<ext:StreamingVideoPlayer/>
 </s:Application>
