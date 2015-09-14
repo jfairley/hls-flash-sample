@@ -1,4 +1,5 @@
 apply plugin: 'flashbuilder'
+apply plugin: 'idea'
 
 
 buildscript {
