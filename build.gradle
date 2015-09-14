@@ -1,0 +1,21 @@
+apply plugin: 'gradlefx'
+
+type = 'swf'
+flexHome = '/Users/jfairley/Development/flex_sdks/4.13.0'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'org.gradlefx', name: 'gradlefx', version: '1.3.0'
+    }
+}
+
+build.dependsOn {
+    tasks.createHtmlWrapper
+}
+
+htmlWrapper {
+    title = 'player test'
+}
