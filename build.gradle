@@ -29,9 +29,12 @@ repositories {
 }
 
 dependencies {
-    merged group: 'com.levelsbeyond.core', name: 'PlexCore', version: '7.11.0', ext: 'swc'
-    merged group: 'com.levelsbeyond.core', name: 'PlexLib', version: '7.11.0', ext: 'swc'
-    merged group: 'com.levelsbeyond.core', name: 'PlexExtensions', version: '7.11.0', ext: 'swc'
+    merged group: 'com.adobe.utils', name: 'as3corelib', version: '0.93.0', ext: 'swc'
+    merged group: 'org.robotlegs', name: 'robotlegs-framework', version: '1.5.2', ext: 'swc'
+    merged group: 'com.levelsbeyond', name: 'CommunityLibs', version: '3.0.0', ext: 'swc'
+    merged group: 'com.levelsbeyond.core', name: 'PlexCore', version: '6.3.0', ext: 'swc'
+    merged group: 'com.levelsbeyond.core', name: 'PlexLib', version: '6.3.0', ext: 'swc'
+    merged group: 'com.levelsbeyond.core', name: 'PlexExtensions', version: '6.3.0', ext: 'swc'
 }
 
 build.dependsOn {
@@ -41,4 +44,3 @@ build.dependsOn {
 htmlWrapper {
     title = 'player test'
 }
-
